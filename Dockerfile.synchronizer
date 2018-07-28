@@ -14,9 +14,7 @@
 
 # docker build -t xosproject/vtn-synchronizer:candidate -f Dockerfile.synchronizer .
 
-# xosproject/vtn-synchronizer
-
-FROM xosproject/xos-synchronizer-base:2.0.0
+FROM cachengo/xos-synchronizer-base:2.0.0
 
 COPY xos/synchronizer /opt/xos/synchronizers/vtn
 COPY VERSION /opt/xos/synchronizers/vtn/
